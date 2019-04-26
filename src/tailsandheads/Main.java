@@ -21,7 +21,7 @@ public class Main {
         System.out.println("Podaj liczbę z zakresu od 1 do 100 ");
         int counter = scanner.nextInt();
 
-        while (counter <= 0 && counter >= 100) {
+        while (counter <= 0 || counter >= 100) {
             System.out.println("Podałeś liczbę spoza zakresu, podaj liczbę między 1, a 100!");
             counter = scanner.nextInt();
         }
